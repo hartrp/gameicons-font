@@ -26,11 +26,11 @@ const iconFont = async () => {
     fontName: 'game-icons',
     css: true,
     ligature: true,    
-    cssTemplate: './templates/css.hbs',
-    templateOptions: {
-      classPrefix: iconClass + '-',
-      baseSelector: '.' + fontClass
-    },
+   cssTemplate: './templates/css.hbs',
+templateOptions: {
+  classPrefix: 'game-icon-',
+  baseSelector: '.game-icon'
+},
     types: ['woff', 'eot', 'ttf'],
     startCodepoint: 0xE000,
     normalize: true
